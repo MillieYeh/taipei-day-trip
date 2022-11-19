@@ -11,7 +11,7 @@ def db_connection():
             port = 3306,
             user = "root",
             database = "travel",
-            password = "cycycy1018",
+            password = " ",
                 # auth_plugin='mysql_native_password',
             charset = "utf8"
         )
@@ -42,7 +42,7 @@ for i in information:
     name = i["name"]
     category = i["CAT"]
     description = i["description"]
-    address = i["address"].replace(' ', ' ')
+    address = i["address"].replace(' ', '')
     transport = i["direction"]
     mrt = i["MRT"]
     lat = i["latitude"]
