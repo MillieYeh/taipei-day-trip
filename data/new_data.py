@@ -51,7 +51,6 @@ for i in information:
 
     img_list =[]
     for j in imgs:
-        #問這個
         suffixes =("JPG", "PNG", "jpg", "png")
         if j.endswith(suffixes) !=True or j == '':
             continue
