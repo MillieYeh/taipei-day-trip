@@ -10,9 +10,9 @@ def db_connection():
             host = "localhost",
             port = 3306,
             user = "root",
-            database = "travel_1119",
+            database = "travel",
             password = " ",
-                # auth_plugin = "mysql_native_password",
+                # auth_plugin='mysql_native_password',
             charset = "utf8"
         )
     except mysql.connector.Error as e:
@@ -51,7 +51,7 @@ for i in information:
 
     img_list =[]
     for j in imgs:
-        #問這個
+
         suffixes =("JPG", "PNG", "jpg", "png")
         if j.endswith(suffixes) !=True or j == '':
             continue
@@ -68,4 +68,3 @@ for i in information:
     mycursor.execute(sql, val)        
     mydb.commit()
 mydb.close()
-    
